@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d6475007-483d-45f6-a2d2-dab510a0e0d8",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.users.users</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-08-18 02:23:14 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>GET operation to obtain users with specific names</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:10]"><span>[2:10]</span> <span>GET operation to obtain users with specific names</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test the RESTful web service</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">GET operation to obtain users with specific names</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1711</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://66c19bb1f83fffcb5879b769.mockapi.io/api/v1/employees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">14:23:11.590 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1686</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">14:23:12.250 request:
+1 &gt; GET https://66c19bb1f83fffcb5879b769.mockapi.io/api/v1/employees
+1 &gt; Host: 66c19bb1f83fffcb5879b769.mockapi.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:23:13.274 response time in milliseconds: 1017
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1723971191&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=gCz%2BYX0Ms5lb8gM1PKbgGTh6ez5HkyLJ0rRRoq4KyKI%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1723971191&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=gCz%2BYX0Ms5lb8gM1PKbgGTh6ez5HkyLJ0rRRoq4KyKI%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+1 &lt; Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 9810
+1 &lt; Etag: &quot;2006459443&quot;
+1 &lt; Date: Sun, 18 Aug 2024 08:53:11 GMT
+1 &lt; Via: 1.1 vegur
+[{&quot;createdAt&quot;:&quot;2024-08-17T12:41:55.313Z&quot;,&quot;name&quot;:&quot;Jesus Cole&quot;,&quot;job-title&quot;:&quot;Lead Marketing Developer&quot;,&quot;manager-name&quot;:&quot;Northeast&quot;,&quot;city&quot;:&quot;Elenorahaven&quot;,&quot;mobile&quot;:&quot;211-806-3313&quot;,&quot;employeeid&quot;:&quot;1&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T16:56:12.517Z&quot;,&quot;name&quot;:&quot;Barry Gorczany&quot;,&quot;job-title&quot;:&quot;District Implementation Officer&quot;,&quot;manager-name&quot;:&quot;Puerto&quot;,&quot;city&quot;:&quot;Luzstead&quot;,&quot;mobile&quot;:&quot;947-981-3333&quot;,&quot;employeeid&quot;:&quot;2&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T06:12:13.788Z&quot;,&quot;name&quot;:&quot;Ms. Melinda Maggio&quot;,&quot;job-title&quot;:&quot;Legacy Mobility Manager&quot;,&quot;manager-name&quot;:&quot;Creative&quot;,&quot;city&quot;:&quot;South Judy&quot;,&quot;mobile&quot;:&quot;447-487-3021&quot;,&quot;employeeid&quot;:&quot;3&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T03:55:16.646Z&quot;,&quot;name&quot;:&quot;Tyler Romaguera MD&quot;,&quot;job-title&quot;:&quot;Forward Data Technician&quot;,&quot;manager-name&quot;:&quot;Cadillac&quot;,&quot;city&quot;:&quot;Willmston&quot;,&quot;mobile&quot;:&quot;378-610-1882&quot;,&quot;employeeid&quot;:&quot;4&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T21:53:32.611Z&quot;,&quot;name&quot;:&quot;Jordan Vandervort IV&quot;,&quot;job-title&quot;:&quot;Legacy Identity Producer&quot;,&quot;manager-name&quot;:&quot;roughly&quot;,&quot;city&quot;:&quot;Fond du Lac&quot;,&quot;mobile&quot;:&quot;630-801-7911&quot;,&quot;employeeid&quot;:&quot;5&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T06:26:27.844Z&quot;,&quot;name&quot;:&quot;Doyle Blanda&quot;,&quot;job-title&quot;:&quot;Direct Program Facilitator&quot;,&quot;manager-name&quot;:&quot;redundant&quot;,&quot;city&quot;:&quot;New Pink&quot;,&quot;mobile&quot;:&quot;391-280-9555&quot;,&quot;employeeid&quot;:&quot;6&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T10:40:21.278Z&quot;,&quot;name&quot;:&quot;Darlene Pollich&quot;,&quot;job-title&quot;:&quot;Dynamic Metrics Representative&quot;,&quot;manager-name&quot;:&quot;Future&quot;,&quot;city&quot;:&quot;Redding&quot;,&quot;mobile&quot;:&quot;240-809-7133&quot;,&quot;employeeid&quot;:&quot;7&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T23:54:47.301Z&quot;,&quot;name&quot;:&quot;Peggy Becker&quot;,&quot;job-title&quot;:&quot;Future Functionality Consultant&quot;,&quot;manager-name&quot;:&quot;Maserati&quot;,&quot;city&quot;:&quot;Lake Barry&quot;,&quot;mobile&quot;:&quot;893-447-7286&quot;,&quot;employeeid&quot;:&quot;8&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T18:23:39.062Z&quot;,&quot;name&quot;:&quot;Owen Thompson&quot;,&quot;job-title&quot;:&quot;Investor Accounts Designer&quot;,&quot;manager-name&quot;:&quot;closely&quot;,&quot;city&quot;:&quot;Frederiqueside&quot;,&quot;mobile&quot;:&quot;505-673-1017&quot;,&quot;employeeid&quot;:&quot;9&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T09:41:32.684Z&quot;,&quot;name&quot;:&quot;Ms. Cedric Dickens&quot;,&quot;job-title&quot;:&quot;Senior Solutions Designer&quot;,&quot;manager-name&quot;:&quot;Southeast&quot;,&quot;city&quot;:&quot;Boyerfield&quot;,&quot;mobile&quot;:&quot;455-671-7637&quot;,&quot;employeeid&quot;:&quot;10&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T15:48:10.684Z&quot;,&quot;name&quot;:&quot;Thomas Bahringer&quot;,&quot;job-title&quot;:&quot;Dynamic Intranet Supervisor&quot;,&quot;manager-name&quot;:&quot;TLS&quot;,&quot;city&quot;:&quot;Narcisocester&quot;,&quot;mobile&quot;:&quot;273-261-7918&quot;,&quot;employeeid&quot;:&quot;11&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T12:22:03.036Z&quot;,&quot;name&quot;:&quot;Donna Emmerich&quot;,&quot;job-title&quot;:&quot;Corporate Interactions Assistant&quot;,&quot;manager-name&quot;:&quot;Focused&quot;,&quot;city&quot;:&quot;Melisaville&quot;,&quot;mobile&quot;:&quot;537-783-9921&quot;,&quot;employeeid&quot;:&quot;12&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T02:22:19.523Z&quot;,&quot;name&quot;:&quot;Shaun Ebert&quot;,&quot;job-title&quot;:&quot;Principal Response Coordinator&quot;,&quot;manager-name&quot;:&quot;Bronze&quot;,&quot;city&quot;:&quot;East Hailey&quot;,&quot;mobile&quot;:&quot;439-510-6522&quot;,&quot;employeeid&quot;:&quot;13&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T06:16:27.116Z&quot;,&quot;name&quot;:&quot;Jimmie Baumbach&quot;,&quot;job-title&quot;:&quot;Global Intranet Liaison&quot;,&quot;manager-name&quot;:&quot;Bedfordshire&quot;,&quot;city&quot;:&quot;New Aprilcester&quot;,&quot;mobile&quot;:&quot;436-857-1693&quot;,&quot;employeeid&quot;:&quot;14&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T00:34:41.393Z&quot;,&quot;name&quot;:&quot;Melody Schneider&quot;,&quot;job-title&quot;:&quot;Future Usability Executive&quot;,&quot;manager-name&quot;:&quot;Wooden&quot;,&quot;city&quot;:&quot;Waukegan&quot;,&quot;mobile&quot;:&quot;823-285-2820&quot;,&quot;employeeid&quot;:&quot;15&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T08:33:42.223Z&quot;,&quot;name&quot;:&quot;Patrick Durgan DVM&quot;,&quot;job-title&quot;:&quot;Corporate Operations Assistant&quot;,&quot;manager-name&quot;:&quot;Louisiana&quot;,&quot;city&quot;:&quot;Fort Robynborough&quot;,&quot;mobile&quot;:&quot;708-836-5784&quot;,&quot;employeeid&quot;:&quot;16&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T12:08:28.218Z&quot;,&quot;name&quot;:&quot;Dave Watsica&quot;,&quot;job-title&quot;:&quot;Principal Data Associate&quot;,&quot;manager-name&quot;:&quot;white&quot;,&quot;city&quot;:&quot;New Ericka&quot;,&quot;mobile&quot;:&quot;371-520-6958&quot;,&quot;employeeid&quot;:&quot;17&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T17:31:28.912Z&quot;,&quot;name&quot;:&quot;Dr. Zachary Gislason MD&quot;,&quot;job-title&quot;:&quot;Principal Intranet Strategist&quot;,&quot;manager-name&quot;:&quot;syndicate&quot;,&quot;city&quot;:&quot;Davis&quot;,&quot;mobile&quot;:&quot;909-511-2972&quot;,&quot;employeeid&quot;:&quot;18&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T22:54:15.951Z&quot;,&quot;name&quot;:&quot;Molly Bashirian&quot;,&quot;job-title&quot;:&quot;Direct Identity Executive&quot;,&quot;manager-name&quot;:&quot;unde&quot;,&quot;city&quot;:&quot;Eunamouth&quot;,&quot;mobile&quot;:&quot;291-691-4379&quot;,&quot;employeeid&quot;:&quot;19&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T00:26:33.586Z&quot;,&quot;name&quot;:&quot;Mandy McKenzie&quot;,&quot;job-title&quot;:&quot;Global Division Director&quot;,&quot;manager-name&quot;:&quot;Avon&quot;,&quot;city&quot;:&quot;West Sophiehaven&quot;,&quot;mobile&quot;:&quot;964-713-4363&quot;,&quot;employeeid&quot;:&quot;20&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T02:18:22.833Z&quot;,&quot;name&quot;:&quot;Lester Bernier&quot;,&quot;job-title&quot;:&quot;Direct Implementation Engineer&quot;,&quot;manager-name&quot;:&quot;Extended&quot;,&quot;city&quot;:&quot;Suffolk&quot;,&quot;mobile&quot;:&quot;562-853-4753&quot;,&quot;employeeid&quot;:&quot;21&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T14:02:31.855Z&quot;,&quot;name&quot;:&quot;Brooke Zulauf&quot;,&quot;job-title&quot;:&quot;Legacy Assurance Technician&quot;,&quot;manager-name&quot;:&quot;Global&quot;,&quot;city&quot;:&quot;North Lilianview&quot;,&quot;mobile&quot;:&quot;509-414-9475&quot;,&quot;employeeid&quot;:&quot;22&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T18:46:34.767Z&quot;,&quot;name&quot;:&quot;Rochelle Mraz III&quot;,&quot;job-title&quot;:&quot;Customer Directives Representative&quot;,&quot;manager-name&quot;:&quot;Central&quot;,&quot;city&quot;:&quot;Godfreyhaven&quot;,&quot;mobile&quot;:&quot;479-537-7971&quot;,&quot;employeeid&quot;:&quot;23&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T14:21:57.608Z&quot;,&quot;name&quot;:&quot;Mack Rice DVM&quot;,&quot;job-title&quot;:&quot;Direct Directives Agent&quot;,&quot;manager-name&quot;:&quot;Ohio&quot;,&quot;city&quot;:&quot;Fort Montyland&quot;,&quot;mobile&quot;:&quot;889-634-3339&quot;,&quot;employeeid&quot;:&quot;24&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T09:29:32.910Z&quot;,&quot;name&quot;:&quot;Santiago Auer&quot;,&quot;job-title&quot;:&quot;Central Tactics Agent&quot;,&quot;manager-name&quot;:&quot;Rap&quot;,&quot;city&quot;:&quot;Sammamish&quot;,&quot;mobile&quot;:&quot;759-798-5330&quot;,&quot;employeeid&quot;:&quot;25&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T11:15:07.939Z&quot;,&quot;name&quot;:&quot;Kurt Hettinger&quot;,&quot;job-title&quot;:&quot;Central Program Officer&quot;,&quot;manager-name&quot;:&quot;Hilo&quot;,&quot;city&quot;:&quot;Leanntown&quot;,&quot;mobile&quot;:&quot;465-571-1767&quot;,&quot;employeeid&quot;:&quot;26&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T07:23:42.137Z&quot;,&quot;name&quot;:&quot;Rafael Keeling&quot;,&quot;job-title&quot;:&quot;Global Infrastructure Executive&quot;,&quot;manager-name&quot;:&quot;Jazz&quot;,&quot;city&quot;:&quot;Cornellview&quot;,&quot;mobile&quot;:&quot;533-361-8239&quot;,&quot;employeeid&quot;:&quot;27&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T02:00:45.379Z&quot;,&quot;name&quot;:&quot;Ian Bergnaum&quot;,&quot;job-title&quot;:&quot;Principal Security Manager&quot;,&quot;manager-name&quot;:&quot;Pataca&quot;,&quot;city&quot;:&quot;Brennaboro&quot;,&quot;mobile&quot;:&quot;898-381-8763&quot;,&quot;employeeid&quot;:&quot;28&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T11:40:47.234Z&quot;,&quot;name&quot;:&quot;Blanca Kirlin&quot;,&quot;job-title&quot;:&quot;Central Markets Executive&quot;,&quot;manager-name&quot;:&quot;East&quot;,&quot;city&quot;:&quot;Goldnerburgh&quot;,&quot;mobile&quot;:&quot;553-982-3027&quot;,&quot;employeeid&quot;:&quot;29&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T01:10:33.650Z&quot;,&quot;name&quot;:&quot;Miss Jesus Keeling&quot;,&quot;job-title&quot;:&quot;Global Paradigm Director&quot;,&quot;manager-name&quot;:&quot;meanwhile&quot;,&quot;city&quot;:&quot;Fullerton&quot;,&quot;mobile&quot;:&quot;602-392-1689&quot;,&quot;employeeid&quot;:&quot;30&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T04:28:01.461Z&quot;,&quot;name&quot;:&quot;Tomas Orn&quot;,&quot;job-title&quot;:&quot;District Web Specialist&quot;,&quot;manager-name&quot;:&quot;reproachfully&quot;,&quot;city&quot;:&quot;West Noelia&quot;,&quot;mobile&quot;:&quot;258-572-1960&quot;,&quot;employeeid&quot;:&quot;31&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T11:13:44.276Z&quot;,&quot;name&quot;:&quot;Simon Swaniawski&quot;,&quot;job-title&quot;:&quot;Regional Quality Orchestrator&quot;,&quot;manager-name&quot;:&quot;Configuration&quot;,&quot;city&quot;:&quot;Lebsackbury&quot;,&quot;mobile&quot;:&quot;821-661-6419&quot;,&quot;employeeid&quot;:&quot;32&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T05:31:57.512Z&quot;,&quot;name&quot;:&quot;Lloyd Von&quot;,&quot;job-title&quot;:&quot;Legacy Quality Consultant&quot;,&quot;manager-name&quot;:&quot;Strategist&quot;,&quot;city&quot;:&quot;Laurelstad&quot;,&quot;mobile&quot;:&quot;932-445-8948&quot;,&quot;employeeid&quot;:&quot;33&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T20:13:47.177Z&quot;,&quot;name&quot;:&quot;Dr. Ginger Kozey&quot;,&quot;job-title&quot;:&quot;Central Program Engineer&quot;,&quot;manager-name&quot;:&quot;Poway&quot;,&quot;city&quot;:&quot;Bartellton&quot;,&quot;mobile&quot;:&quot;525-648-8602&quot;,&quot;employeeid&quot;:&quot;34&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T00:09:35.848Z&quot;,&quot;name&quot;:&quot;Mr. Allen Dickens&quot;,&quot;job-title&quot;:&quot;Corporate Mobility Orchestrator&quot;,&quot;manager-name&quot;:&quot;integrated&quot;,&quot;city&quot;:&quot;Kansas City&quot;,&quot;mobile&quot;:&quot;441-575-8543&quot;,&quot;employeeid&quot;:&quot;35&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T18:55:17.672Z&quot;,&quot;name&quot;:&quot;Peter Gutmann DDS&quot;,&quot;job-title&quot;:&quot;District Security Developer&quot;,&quot;manager-name&quot;:&quot;Jordan&quot;,&quot;city&quot;:&quot;Hermistontown&quot;,&quot;mobile&quot;:&quot;632-664-4984&quot;,&quot;employeeid&quot;:&quot;36&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T11:24:08.415Z&quot;,&quot;name&quot;:&quot;Nathan Lockman&quot;,&quot;job-title&quot;:&quot;Future Assurance Supervisor&quot;,&quot;manager-name&quot;:&quot;Borders&quot;,&quot;city&quot;:&quot;Modesto&quot;,&quot;mobile&quot;:&quot;778-740-0581&quot;,&quot;employeeid&quot;:&quot;37&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T17:07:50.126Z&quot;,&quot;name&quot;:&quot;Myra Conn&quot;,&quot;job-title&quot;:&quot;Human Interactions Manager&quot;,&quot;manager-name&quot;:&quot;round&quot;,&quot;city&quot;:&quot;Kuvalisworth&quot;,&quot;mobile&quot;:&quot;951-480-0281&quot;,&quot;employeeid&quot;:&quot;38&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T01:39:40.126Z&quot;,&quot;name&quot;:&quot;Santos McGlynn&quot;,&quot;job-title&quot;:&quot;Investor Solutions Supervisor&quot;,&quot;manager-name&quot;:&quot;Bedfordshire&quot;,&quot;city&quot;:&quot;Cecileshire&quot;,&quot;mobile&quot;:&quot;358-428-9582&quot;,&quot;employeeid&quot;:&quot;39&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T11:52:43.553Z&quot;,&quot;name&quot;:&quot;Mrs. Tommie Haley&quot;,&quot;job-title&quot;:&quot;Product Communications Assistant&quot;,&quot;manager-name&quot;:&quot;Gasoline&quot;,&quot;city&quot;:&quot;Port Greysonport&quot;,&quot;mobile&quot;:&quot;454-939-6500&quot;,&quot;employeeid&quot;:&quot;40&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T03:55:04.070Z&quot;,&quot;name&quot;:&quot;Boyd Howell&quot;,&quot;job-title&quot;:&quot;Product Creative Architect&quot;,&quot;manager-name&quot;:&quot;Louisiana&quot;,&quot;city&quot;:&quot;Port Barneyfort&quot;,&quot;mobile&quot;:&quot;350-416-3919&quot;,&quot;employeeid&quot;:&quot;41&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T13:38:48.350Z&quot;,&quot;name&quot;:&quot;Clara Rodriguez&quot;,&quot;job-title&quot;:&quot;Corporate Brand Administrator&quot;,&quot;manager-name&quot;:&quot;naughty&quot;,&quot;city&quot;:&quot;Colorado Springs&quot;,&quot;mobile&quot;:&quot;573-803-0288&quot;,&quot;employeeid&quot;:&quot;42&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T21:50:11.912Z&quot;,&quot;name&quot;:&quot;Olivia Herman V&quot;,&quot;job-title&quot;:&quot;International Operations Liaison&quot;,&quot;manager-name&quot;:&quot;collaborative&quot;,&quot;city&quot;:&quot;South Ashlynn&quot;,&quot;mobile&quot;:&quot;518-905-3274&quot;,&quot;employeeid&quot;:&quot;43&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T09:31:40.055Z&quot;,&quot;name&quot;:&quot;Troy Raynor&quot;,&quot;job-title&quot;:&quot;Dynamic Infrastructure Technician&quot;,&quot;manager-name&quot;:&quot;Northwest&quot;,&quot;city&quot;:&quot;Port Theronburgh&quot;,&quot;mobile&quot;:&quot;917-222-2629&quot;,&quot;employeeid&quot;:&quot;44&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T03:15:11.048Z&quot;,&quot;name&quot;:&quot;Miss Mitchell Satterfield&quot;,&quot;job-title&quot;:&quot;Corporate Response Designer&quot;,&quot;manager-name&quot;:&quot;Chair&quot;,&quot;city&quot;:&quot;South Orlandport&quot;,&quot;mobile&quot;:&quot;283-488-8147&quot;,&quot;employeeid&quot;:&quot;45&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T02:56:16.971Z&quot;,&quot;name&quot;:&quot;Katie Bednar&quot;,&quot;job-title&quot;:&quot;Future Directives Strategist&quot;,&quot;manager-name&quot;:&quot;Liaison&quot;,&quot;city&quot;:&quot;Perris&quot;,&quot;mobile&quot;:&quot;943-384-3184&quot;,&quot;employeeid&quot;:&quot;46&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T23:32:46.067Z&quot;,&quot;name&quot;:&quot;Viola Waters&quot;,&quot;job-title&quot;:&quot;Forward Functionality Architect&quot;,&quot;manager-name&quot;:&quot;Product&quot;,&quot;city&quot;:&quot;Port Kearastad&quot;,&quot;mobile&quot;:&quot;536-364-2630&quot;,&quot;employeeid&quot;:&quot;47&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T21:17:41.185Z&quot;,&quot;name&quot;:&quot;Casey Gottlieb&quot;,&quot;job-title&quot;:&quot;Product Functionality Analyst&quot;,&quot;manager-name&quot;:&quot;transform&quot;,&quot;city&quot;:&quot;Gilroy&quot;,&quot;mobile&quot;:&quot;687-506-6296&quot;,&quot;employeeid&quot;:&quot;48&quot;},{&quot;createdAt&quot;:&quot;2024-08-17T10:40:50.832Z&quot;,&quot;name&quot;:&quot;Mr. Cindy Smith&quot;,&quot;job-title&quot;:&quot;Future Markets Administrator&quot;,&quot;manager-name&quot;:&quot;Northeast&quot;,&quot;city&quot;:&quot;Kayaton&quot;,&quot;mobile&quot;:&quot;826-653-8167&quot;,&quot;employeeid&quot;:&quot;49&quot;},{&quot;createdAt&quot;:&quot;2024-08-18T05:18:38.179Z&quot;,&quot;name&quot;:&quot;Ms. Bert Simonis&quot;,&quot;job-title&quot;:&quot;Internal Intranet Consultant&quot;,&quot;manager-name&quot;:&quot;Bedfordshire&quot;,&quot;city&quot;:&quot;Germanhaven&quot;,&quot;mobile&quot;:&quot;876-910-6228&quot;,&quot;employeeid&quot;:&quot;50&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">14:23:13.361 [print] [
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T12:41:55.313Z&quot;,
+    &quot;name&quot;: &quot;Jesus Cole&quot;,
+    &quot;job-title&quot;: &quot;Lead Marketing Developer&quot;,
+    &quot;manager-name&quot;: &quot;Northeast&quot;,
+    &quot;city&quot;: &quot;Elenorahaven&quot;,
+    &quot;mobile&quot;: &quot;211-806-3313&quot;,
+    &quot;employeeid&quot;: &quot;1&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T16:56:12.517Z&quot;,
+    &quot;name&quot;: &quot;Barry Gorczany&quot;,
+    &quot;job-title&quot;: &quot;District Implementation Officer&quot;,
+    &quot;manager-name&quot;: &quot;Puerto&quot;,
+    &quot;city&quot;: &quot;Luzstead&quot;,
+    &quot;mobile&quot;: &quot;947-981-3333&quot;,
+    &quot;employeeid&quot;: &quot;2&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T06:12:13.788Z&quot;,
+    &quot;name&quot;: &quot;Ms. Melinda Maggio&quot;,
+    &quot;job-title&quot;: &quot;Legacy Mobility Manager&quot;,
+    &quot;manager-name&quot;: &quot;Creative&quot;,
+    &quot;city&quot;: &quot;South Judy&quot;,
+    &quot;mobile&quot;: &quot;447-487-3021&quot;,
+    &quot;employeeid&quot;: &quot;3&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T03:55:16.646Z&quot;,
+    &quot;name&quot;: &quot;Tyler Romaguera MD&quot;,
+    &quot;job-title&quot;: &quot;Forward Data Technician&quot;,
+    &quot;manager-name&quot;: &quot;Cadillac&quot;,
+    &quot;city&quot;: &quot;Willmston&quot;,
+    &quot;mobile&quot;: &quot;378-610-1882&quot;,
+    &quot;employeeid&quot;: &quot;4&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T21:53:32.611Z&quot;,
+    &quot;name&quot;: &quot;Jordan Vandervort IV&quot;,
+    &quot;job-title&quot;: &quot;Legacy Identity Producer&quot;,
+    &quot;manager-name&quot;: &quot;roughly&quot;,
+    &quot;city&quot;: &quot;Fond du Lac&quot;,
+    &quot;mobile&quot;: &quot;630-801-7911&quot;,
+    &quot;employeeid&quot;: &quot;5&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T06:26:27.844Z&quot;,
+    &quot;name&quot;: &quot;Doyle Blanda&quot;,
+    &quot;job-title&quot;: &quot;Direct Program Facilitator&quot;,
+    &quot;manager-name&quot;: &quot;redundant&quot;,
+    &quot;city&quot;: &quot;New Pink&quot;,
+    &quot;mobile&quot;: &quot;391-280-9555&quot;,
+    &quot;employeeid&quot;: &quot;6&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T10:40:21.278Z&quot;,
+    &quot;name&quot;: &quot;Darlene Pollich&quot;,
+    &quot;job-title&quot;: &quot;Dynamic Metrics Representative&quot;,
+    &quot;manager-name&quot;: &quot;Future&quot;,
+    &quot;city&quot;: &quot;Redding&quot;,
+    &quot;mobile&quot;: &quot;240-809-7133&quot;,
+    &quot;employeeid&quot;: &quot;7&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T23:54:47.301Z&quot;,
+    &quot;name&quot;: &quot;Peggy Becker&quot;,
+    &quot;job-title&quot;: &quot;Future Functionality Consultant&quot;,
+    &quot;manager-name&quot;: &quot;Maserati&quot;,
+    &quot;city&quot;: &quot;Lake Barry&quot;,
+    &quot;mobile&quot;: &quot;893-447-7286&quot;,
+    &quot;employeeid&quot;: &quot;8&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T18:23:39.062Z&quot;,
+    &quot;name&quot;: &quot;Owen Thompson&quot;,
+    &quot;job-title&quot;: &quot;Investor Accounts Designer&quot;,
+    &quot;manager-name&quot;: &quot;closely&quot;,
+    &quot;city&quot;: &quot;Frederiqueside&quot;,
+    &quot;mobile&quot;: &quot;505-673-1017&quot;,
+    &quot;employeeid&quot;: &quot;9&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T09:41:32.684Z&quot;,
+    &quot;name&quot;: &quot;Ms. Cedric Dickens&quot;,
+    &quot;job-title&quot;: &quot;Senior Solutions Designer&quot;,
+    &quot;manager-name&quot;: &quot;Southeast&quot;,
+    &quot;city&quot;: &quot;Boyerfield&quot;,
+    &quot;mobile&quot;: &quot;455-671-7637&quot;,
+    &quot;employeeid&quot;: &quot;10&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T15:48:10.684Z&quot;,
+    &quot;name&quot;: &quot;Thomas Bahringer&quot;,
+    &quot;job-title&quot;: &quot;Dynamic Intranet Supervisor&quot;,
+    &quot;manager-name&quot;: &quot;TLS&quot;,
+    &quot;city&quot;: &quot;Narcisocester&quot;,
+    &quot;mobile&quot;: &quot;273-261-7918&quot;,
+    &quot;employeeid&quot;: &quot;11&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T12:22:03.036Z&quot;,
+    &quot;name&quot;: &quot;Donna Emmerich&quot;,
+    &quot;job-title&quot;: &quot;Corporate Interactions Assistant&quot;,
+    &quot;manager-name&quot;: &quot;Focused&quot;,
+    &quot;city&quot;: &quot;Melisaville&quot;,
+    &quot;mobile&quot;: &quot;537-783-9921&quot;,
+    &quot;employeeid&quot;: &quot;12&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T02:22:19.523Z&quot;,
+    &quot;name&quot;: &quot;Shaun Ebert&quot;,
+    &quot;job-title&quot;: &quot;Principal Response Coordinator&quot;,
+    &quot;manager-name&quot;: &quot;Bronze&quot;,
+    &quot;city&quot;: &quot;East Hailey&quot;,
+    &quot;mobile&quot;: &quot;439-510-6522&quot;,
+    &quot;employeeid&quot;: &quot;13&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T06:16:27.116Z&quot;,
+    &quot;name&quot;: &quot;Jimmie Baumbach&quot;,
+    &quot;job-title&quot;: &quot;Global Intranet Liaison&quot;,
+    &quot;manager-name&quot;: &quot;Bedfordshire&quot;,
+    &quot;city&quot;: &quot;New Aprilcester&quot;,
+    &quot;mobile&quot;: &quot;436-857-1693&quot;,
+    &quot;employeeid&quot;: &quot;14&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T00:34:41.393Z&quot;,
+    &quot;name&quot;: &quot;Melody Schneider&quot;,
+    &quot;job-title&quot;: &quot;Future Usability Executive&quot;,
+    &quot;manager-name&quot;: &quot;Wooden&quot;,
+    &quot;city&quot;: &quot;Waukegan&quot;,
+    &quot;mobile&quot;: &quot;823-285-2820&quot;,
+    &quot;employeeid&quot;: &quot;15&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T08:33:42.223Z&quot;,
+    &quot;name&quot;: &quot;Patrick Durgan DVM&quot;,
+    &quot;job-title&quot;: &quot;Corporate Operations Assistant&quot;,
+    &quot;manager-name&quot;: &quot;Louisiana&quot;,
+    &quot;city&quot;: &quot;Fort Robynborough&quot;,
+    &quot;mobile&quot;: &quot;708-836-5784&quot;,
+    &quot;employeeid&quot;: &quot;16&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T12:08:28.218Z&quot;,
+    &quot;name&quot;: &quot;Dave Watsica&quot;,
+    &quot;job-title&quot;: &quot;Principal Data Associate&quot;,
+    &quot;manager-name&quot;: &quot;white&quot;,
+    &quot;city&quot;: &quot;New Ericka&quot;,
+    &quot;mobile&quot;: &quot;371-520-6958&quot;,
+    &quot;employeeid&quot;: &quot;17&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T17:31:28.912Z&quot;,
+    &quot;name&quot;: &quot;Dr. Zachary Gislason MD&quot;,
+    &quot;job-title&quot;: &quot;Principal Intranet Strategist&quot;,
+    &quot;manager-name&quot;: &quot;syndicate&quot;,
+    &quot;city&quot;: &quot;Davis&quot;,
+    &quot;mobile&quot;: &quot;909-511-2972&quot;,
+    &quot;employeeid&quot;: &quot;18&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T22:54:15.951Z&quot;,
+    &quot;name&quot;: &quot;Molly Bashirian&quot;,
+    &quot;job-title&quot;: &quot;Direct Identity Executive&quot;,
+    &quot;manager-name&quot;: &quot;unde&quot;,
+    &quot;city&quot;: &quot;Eunamouth&quot;,
+    &quot;mobile&quot;: &quot;291-691-4379&quot;,
+    &quot;employeeid&quot;: &quot;19&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T00:26:33.586Z&quot;,
+    &quot;name&quot;: &quot;Mandy McKenzie&quot;,
+    &quot;job-title&quot;: &quot;Global Division Director&quot;,
+    &quot;manager-name&quot;: &quot;Avon&quot;,
+    &quot;city&quot;: &quot;West Sophiehaven&quot;,
+    &quot;mobile&quot;: &quot;964-713-4363&quot;,
+    &quot;employeeid&quot;: &quot;20&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T02:18:22.833Z&quot;,
+    &quot;name&quot;: &quot;Lester Bernier&quot;,
+    &quot;job-title&quot;: &quot;Direct Implementation Engineer&quot;,
+    &quot;manager-name&quot;: &quot;Extended&quot;,
+    &quot;city&quot;: &quot;Suffolk&quot;,
+    &quot;mobile&quot;: &quot;562-853-4753&quot;,
+    &quot;employeeid&quot;: &quot;21&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T14:02:31.855Z&quot;,
+    &quot;name&quot;: &quot;Brooke Zulauf&quot;,
+    &quot;job-title&quot;: &quot;Legacy Assurance Technician&quot;,
+    &quot;manager-name&quot;: &quot;Global&quot;,
+    &quot;city&quot;: &quot;North Lilianview&quot;,
+    &quot;mobile&quot;: &quot;509-414-9475&quot;,
+    &quot;employeeid&quot;: &quot;22&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T18:46:34.767Z&quot;,
+    &quot;name&quot;: &quot;Rochelle Mraz III&quot;,
+    &quot;job-title&quot;: &quot;Customer Directives Representative&quot;,
+    &quot;manager-name&quot;: &quot;Central&quot;,
+    &quot;city&quot;: &quot;Godfreyhaven&quot;,
+    &quot;mobile&quot;: &quot;479-537-7971&quot;,
+    &quot;employeeid&quot;: &quot;23&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T14:21:57.608Z&quot;,
+    &quot;name&quot;: &quot;Mack Rice DVM&quot;,
+    &quot;job-title&quot;: &quot;Direct Directives Agent&quot;,
+    &quot;manager-name&quot;: &quot;Ohio&quot;,
+    &quot;city&quot;: &quot;Fort Montyland&quot;,
+    &quot;mobile&quot;: &quot;889-634-3339&quot;,
+    &quot;employeeid&quot;: &quot;24&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T09:29:32.910Z&quot;,
+    &quot;name&quot;: &quot;Santiago Auer&quot;,
+    &quot;job-title&quot;: &quot;Central Tactics Agent&quot;,
+    &quot;manager-name&quot;: &quot;Rap&quot;,
+    &quot;city&quot;: &quot;Sammamish&quot;,
+    &quot;mobile&quot;: &quot;759-798-5330&quot;,
+    &quot;employeeid&quot;: &quot;25&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T11:15:07.939Z&quot;,
+    &quot;name&quot;: &quot;Kurt Hettinger&quot;,
+    &quot;job-title&quot;: &quot;Central Program Officer&quot;,
+    &quot;manager-name&quot;: &quot;Hilo&quot;,
+    &quot;city&quot;: &quot;Leanntown&quot;,
+    &quot;mobile&quot;: &quot;465-571-1767&quot;,
+    &quot;employeeid&quot;: &quot;26&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T07:23:42.137Z&quot;,
+    &quot;name&quot;: &quot;Rafael Keeling&quot;,
+    &quot;job-title&quot;: &quot;Global Infrastructure Executive&quot;,
+    &quot;manager-name&quot;: &quot;Jazz&quot;,
+    &quot;city&quot;: &quot;Cornellview&quot;,
+    &quot;mobile&quot;: &quot;533-361-8239&quot;,
+    &quot;employeeid&quot;: &quot;27&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T02:00:45.379Z&quot;,
+    &quot;name&quot;: &quot;Ian Bergnaum&quot;,
+    &quot;job-title&quot;: &quot;Principal Security Manager&quot;,
+    &quot;manager-name&quot;: &quot;Pataca&quot;,
+    &quot;city&quot;: &quot;Brennaboro&quot;,
+    &quot;mobile&quot;: &quot;898-381-8763&quot;,
+    &quot;employeeid&quot;: &quot;28&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T11:40:47.234Z&quot;,
+    &quot;name&quot;: &quot;Blanca Kirlin&quot;,
+    &quot;job-title&quot;: &quot;Central Markets Executive&quot;,
+    &quot;manager-name&quot;: &quot;East&quot;,
+    &quot;city&quot;: &quot;Goldnerburgh&quot;,
+    &quot;mobile&quot;: &quot;553-982-3027&quot;,
+    &quot;employeeid&quot;: &quot;29&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T01:10:33.650Z&quot;,
+    &quot;name&quot;: &quot;Miss Jesus Keeling&quot;,
+    &quot;job-title&quot;: &quot;Global Paradigm Director&quot;,
+    &quot;manager-name&quot;: &quot;meanwhile&quot;,
+    &quot;city&quot;: &quot;Fullerton&quot;,
+    &quot;mobile&quot;: &quot;602-392-1689&quot;,
+    &quot;employeeid&quot;: &quot;30&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T04:28:01.461Z&quot;,
+    &quot;name&quot;: &quot;Tomas Orn&quot;,
+    &quot;job-title&quot;: &quot;District Web Specialist&quot;,
+    &quot;manager-name&quot;: &quot;reproachfully&quot;,
+    &quot;city&quot;: &quot;West Noelia&quot;,
+    &quot;mobile&quot;: &quot;258-572-1960&quot;,
+    &quot;employeeid&quot;: &quot;31&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T11:13:44.276Z&quot;,
+    &quot;name&quot;: &quot;Simon Swaniawski&quot;,
+    &quot;job-title&quot;: &quot;Regional Quality Orchestrator&quot;,
+    &quot;manager-name&quot;: &quot;Configuration&quot;,
+    &quot;city&quot;: &quot;Lebsackbury&quot;,
+    &quot;mobile&quot;: &quot;821-661-6419&quot;,
+    &quot;employeeid&quot;: &quot;32&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T05:31:57.512Z&quot;,
+    &quot;name&quot;: &quot;Lloyd Von&quot;,
+    &quot;job-title&quot;: &quot;Legacy Quality Consultant&quot;,
+    &quot;manager-name&quot;: &quot;Strategist&quot;,
+    &quot;city&quot;: &quot;Laurelstad&quot;,
+    &quot;mobile&quot;: &quot;932-445-8948&quot;,
+    &quot;employeeid&quot;: &quot;33&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T20:13:47.177Z&quot;,
+    &quot;name&quot;: &quot;Dr. Ginger Kozey&quot;,
+    &quot;job-title&quot;: &quot;Central Program Engineer&quot;,
+    &quot;manager-name&quot;: &quot;Poway&quot;,
+    &quot;city&quot;: &quot;Bartellton&quot;,
+    &quot;mobile&quot;: &quot;525-648-8602&quot;,
+    &quot;employeeid&quot;: &quot;34&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T00:09:35.848Z&quot;,
+    &quot;name&quot;: &quot;Mr. Allen Dickens&quot;,
+    &quot;job-title&quot;: &quot;Corporate Mobility Orchestrator&quot;,
+    &quot;manager-name&quot;: &quot;integrated&quot;,
+    &quot;city&quot;: &quot;Kansas City&quot;,
+    &quot;mobile&quot;: &quot;441-575-8543&quot;,
+    &quot;employeeid&quot;: &quot;35&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T18:55:17.672Z&quot;,
+    &quot;name&quot;: &quot;Peter Gutmann DDS&quot;,
+    &quot;job-title&quot;: &quot;District Security Developer&quot;,
+    &quot;manager-name&quot;: &quot;Jordan&quot;,
+    &quot;city&quot;: &quot;Hermistontown&quot;,
+    &quot;mobile&quot;: &quot;632-664-4984&quot;,
+    &quot;employeeid&quot;: &quot;36&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T11:24:08.415Z&quot;,
+    &quot;name&quot;: &quot;Nathan Lockman&quot;,
+    &quot;job-title&quot;: &quot;Future Assurance Supervisor&quot;,
+    &quot;manager-name&quot;: &quot;Borders&quot;,
+    &quot;city&quot;: &quot;Modesto&quot;,
+    &quot;mobile&quot;: &quot;778-740-0581&quot;,
+    &quot;employeeid&quot;: &quot;37&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T17:07:50.126Z&quot;,
+    &quot;name&quot;: &quot;Myra Conn&quot;,
+    &quot;job-title&quot;: &quot;Human Interactions Manager&quot;,
+    &quot;manager-name&quot;: &quot;round&quot;,
+    &quot;city&quot;: &quot;Kuvalisworth&quot;,
+    &quot;mobile&quot;: &quot;951-480-0281&quot;,
+    &quot;employeeid&quot;: &quot;38&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T01:39:40.126Z&quot;,
+    &quot;name&quot;: &quot;Santos McGlynn&quot;,
+    &quot;job-title&quot;: &quot;Investor Solutions Supervisor&quot;,
+    &quot;manager-name&quot;: &quot;Bedfordshire&quot;,
+    &quot;city&quot;: &quot;Cecileshire&quot;,
+    &quot;mobile&quot;: &quot;358-428-9582&quot;,
+    &quot;employeeid&quot;: &quot;39&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T11:52:43.553Z&quot;,
+    &quot;name&quot;: &quot;Mrs. Tommie Haley&quot;,
+    &quot;job-title&quot;: &quot;Product Communications Assistant&quot;,
+    &quot;manager-name&quot;: &quot;Gasoline&quot;,
+    &quot;city&quot;: &quot;Port Greysonport&quot;,
+    &quot;mobile&quot;: &quot;454-939-6500&quot;,
+    &quot;employeeid&quot;: &quot;40&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T03:55:04.070Z&quot;,
+    &quot;name&quot;: &quot;Boyd Howell&quot;,
+    &quot;job-title&quot;: &quot;Product Creative Architect&quot;,
+    &quot;manager-name&quot;: &quot;Louisiana&quot;,
+    &quot;city&quot;: &quot;Port Barneyfort&quot;,
+    &quot;mobile&quot;: &quot;350-416-3919&quot;,
+    &quot;employeeid&quot;: &quot;41&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T13:38:48.350Z&quot;,
+    &quot;name&quot;: &quot;Clara Rodriguez&quot;,
+    &quot;job-title&quot;: &quot;Corporate Brand Administrator&quot;,
+    &quot;manager-name&quot;: &quot;naughty&quot;,
+    &quot;city&quot;: &quot;Colorado Springs&quot;,
+    &quot;mobile&quot;: &quot;573-803-0288&quot;,
+    &quot;employeeid&quot;: &quot;42&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T21:50:11.912Z&quot;,
+    &quot;name&quot;: &quot;Olivia Herman V&quot;,
+    &quot;job-title&quot;: &quot;International Operations Liaison&quot;,
+    &quot;manager-name&quot;: &quot;collaborative&quot;,
+    &quot;city&quot;: &quot;South Ashlynn&quot;,
+    &quot;mobile&quot;: &quot;518-905-3274&quot;,
+    &quot;employeeid&quot;: &quot;43&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T09:31:40.055Z&quot;,
+    &quot;name&quot;: &quot;Troy Raynor&quot;,
+    &quot;job-title&quot;: &quot;Dynamic Infrastructure Technician&quot;,
+    &quot;manager-name&quot;: &quot;Northwest&quot;,
+    &quot;city&quot;: &quot;Port Theronburgh&quot;,
+    &quot;mobile&quot;: &quot;917-222-2629&quot;,
+    &quot;employeeid&quot;: &quot;44&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T03:15:11.048Z&quot;,
+    &quot;name&quot;: &quot;Miss Mitchell Satterfield&quot;,
+    &quot;job-title&quot;: &quot;Corporate Response Designer&quot;,
+    &quot;manager-name&quot;: &quot;Chair&quot;,
+    &quot;city&quot;: &quot;South Orlandport&quot;,
+    &quot;mobile&quot;: &quot;283-488-8147&quot;,
+    &quot;employeeid&quot;: &quot;45&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T02:56:16.971Z&quot;,
+    &quot;name&quot;: &quot;Katie Bednar&quot;,
+    &quot;job-title&quot;: &quot;Future Directives Strategist&quot;,
+    &quot;manager-name&quot;: &quot;Liaison&quot;,
+    &quot;city&quot;: &quot;Perris&quot;,
+    &quot;mobile&quot;: &quot;943-384-3184&quot;,
+    &quot;employeeid&quot;: &quot;46&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T23:32:46.067Z&quot;,
+    &quot;name&quot;: &quot;Viola Waters&quot;,
+    &quot;job-title&quot;: &quot;Forward Functionality Architect&quot;,
+    &quot;manager-name&quot;: &quot;Product&quot;,
+    &quot;city&quot;: &quot;Port Kearastad&quot;,
+    &quot;mobile&quot;: &quot;536-364-2630&quot;,
+    &quot;employeeid&quot;: &quot;47&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T21:17:41.185Z&quot;,
+    &quot;name&quot;: &quot;Casey Gottlieb&quot;,
+    &quot;job-title&quot;: &quot;Product Functionality Analyst&quot;,
+    &quot;manager-name&quot;: &quot;transform&quot;,
+    &quot;city&quot;: &quot;Gilroy&quot;,
+    &quot;mobile&quot;: &quot;687-506-6296&quot;,
+    &quot;employeeid&quot;: &quot;48&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T10:40:50.832Z&quot;,
+    &quot;name&quot;: &quot;Mr. Cindy Smith&quot;,
+    &quot;job-title&quot;: &quot;Future Markets Administrator&quot;,
+    &quot;manager-name&quot;: &quot;Northeast&quot;,
+    &quot;city&quot;: &quot;Kayaton&quot;,
+    &quot;mobile&quot;: &quot;826-653-8167&quot;,
+    &quot;employeeid&quot;: &quot;49&quot;
+  },
+  {
+    &quot;createdAt&quot;: &quot;2024-08-18T05:18:38.179Z&quot;,
+    &quot;name&quot;: &quot;Ms. Bert Simonis&quot;,
+    &quot;job-title&quot;: &quot;Internal Intranet Consultant&quot;,
+    &quot;manager-name&quot;: &quot;Bedfordshire&quot;,
+    &quot;city&quot;: &quot;Germanhaven&quot;,
+    &quot;mobile&quot;: &quot;876-910-6228&quot;,
+    &quot;employeeid&quot;: &quot;50&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:10]</span>
+                <span class="scenario-name">GET operation to obtain users with specific names</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1064</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://66c19bb1f83fffcb5879b769.mockapi.io/api/v1/employees?employeeid=1&amp;name=Jesus%20Cole&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">14:23:13.401 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1060</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">14:23:13.411 request:
+1 &gt; GET https://66c19bb1f83fffcb5879b769.mockapi.io/api/v1/employees?employeeid=1&amp;name=Jesus%20Cole
+1 &gt; Host: 66c19bb1f83fffcb5879b769.mockapi.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:23:14.465 response time in milliseconds: 1052
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1723971193&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=IOcp%2B80lTkf8ObXnQWsAvs%2Fg53YRfwtEIJ9AMT58KaA%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1723971193&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=IOcp%2B80lTkf8ObXnQWsAvs%2Fg53YRfwtEIJ9AMT58KaA%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+1 &lt; Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 191
+1 &lt; Etag: &quot;-1216820524&quot;
+1 &lt; Date: Sun, 18 Aug 2024 08:53:13 GMT
+1 &lt; Via: 1.1 vegur
+[{&quot;createdAt&quot;:&quot;2024-08-17T12:41:55.313Z&quot;,&quot;name&quot;:&quot;Jesus Cole&quot;,&quot;job-title&quot;:&quot;Lead Marketing Developer&quot;,&quot;manager-name&quot;:&quot;Northeast&quot;,&quot;city&quot;:&quot;Elenorahaven&quot;,&quot;mobile&quot;:&quot;211-806-3313&quot;,&quot;employeeid&quot;:&quot;1&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">14:23:14.470 [print] [
+  {
+    &quot;createdAt&quot;: &quot;2024-08-17T12:41:55.313Z&quot;,
+    &quot;name&quot;: &quot;Jesus Cole&quot;,
+    &quot;job-title&quot;: &quot;Lead Marketing Developer&quot;,
+    &quot;manager-name&quot;: &quot;Northeast&quot;,
+    &quot;city&quot;: &quot;Elenorahaven&quot;,
+    &quot;mobile&quot;: &quot;211-806-3313&quot;,
+    &quot;employeeid&quot;: &quot;1&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
